@@ -11,6 +11,10 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 SYSTEM_PROMPT = """You are a query classifier for a text-to-SQL system.
 Given a user's natural language question and a list of heuristic-flagged
 ambiguity signals, classify the query and score your confidence.
+Do NOT flag a query as ambiguous just because it involves grouping, filtering,
+or joining — only flag it if a term's meaning is genuinely unclear (e.g. "top",
+"best" without a defined metric). A query with an explicit, specific criterion
+is NOT ambiguous even if it requires a complex query.
 
 Return ONLY valid JSON matching this schema, no other text:
 {

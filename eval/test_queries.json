@@ -48,5 +48,95 @@
     "question": "Show total sales per country",
     "expected_ambiguous": false,
     "expected_tables": ["invoice", "customer"]
+  },
+  {
+    "question": "Which employees report to Nancy Edwards?",
+    "expected_ambiguous": false,
+    "expected_tables": ["employee"]
+  },
+  {
+    "question": "List customers who have never placed an order",
+    "expected_ambiguous": false,
+    "expected_tables": ["customer", "invoice"]
+  },
+  {
+    "question": "Show invoices from the year 2010",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice"]
+  },
+  {
+    "question": "What is the biggest selling album?",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "Which artist has the worst reviews?",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "What is the average invoice total per customer?",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice"]
+  },
+  {
+    "question": "List all tracks in the Jazz genre",
+    "expected_ambiguous": false,
+    "expected_tables": ["track", "genre"]
+  },
+  {
+    "question": "Show me significant customers this year",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "Get playlists that contain more than 50 tracks",
+    "expected_ambiguous": false,
+    "expected_tables": ["playlist", "playlist_track"]
+  },
+  {
+    "question": "Which country generates the highest revenue?",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice", "customer"]
+  },
+  {
+    "question": "Show tracks that have never been purchased",
+    "expected_ambiguous": false,
+    "expected_tables": ["track", "invoice_line"]
+  },
+  {
+    "question": "List employees hired after 2003",
+    "expected_ambiguous": false,
+    "expected_tables": ["employee"]
+  },
+  {
+    "question": "What genres does each customer prefer?",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "Show total number of tracks per album",
+    "expected_ambiguous": false,
+    "expected_tables": ["album", "track"]
+  },
+  {
+    "question": "List the cheapest tracks available",
+    "expected_ambiguous": false,
+    "expected_tables": []
+  },
+  {
+    "question": "Get all invoices above $10",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice"]
+  },
+  {
+    "question": "Show me customers grouped by support representative",
+    "expected_ambiguous": false,
+    "expected_tables": ["customer", "employee"]
+  },
+  {
+    "question": "What is a good album to recommend?",
+    "expected_ambiguous": true,
+    "expected_tables": []
   }
 ]

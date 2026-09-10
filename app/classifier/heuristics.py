@@ -5,6 +5,9 @@ VAGUE_TERMS = {
     "high": "threshold undefined: no clear cutoff value",
     "popular": "metric undefined: could mean sales count or rating",
     "most": "metric undefined: 'most' by what measure?",
+    "biggest": "metric undefined: could mean revenue or units sold",
+    "recommend": "subjective judgment required, not directly queryable from data",
+"good": "subjective judgment required, no defined quality metric",
 }
 
 def heuristic_check(question: str) -> list[str]:
