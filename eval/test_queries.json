@@ -1,0 +1,52 @@
+[
+  {
+    "question": "List all albums by AC/DC",
+    "expected_ambiguous": false,
+    "expected_tables": ["album", "artist"]
+  },
+  {
+    "question": "Show me the top customers",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "What is the total revenue?",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice"]
+  },
+  {
+    "question": "List tracks longer than 5 minutes",
+    "expected_ambiguous": false,
+    "expected_tables": ["track"]
+  },
+  {
+    "question": "Show me the best selling genre",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "Get all customers from Germany",
+    "expected_ambiguous": false,
+    "expected_tables": ["customer"]
+  },
+  {
+    "question": "Show me recent invoices",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "List all employees and their titles",
+    "expected_ambiguous": false,
+    "expected_tables": ["employee"]
+  },
+  {
+    "question": "What are the most popular tracks?",
+    "expected_ambiguous": true,
+    "expected_tables": []
+  },
+  {
+    "question": "Show total sales per country",
+    "expected_ambiguous": false,
+    "expected_tables": ["invoice", "customer"]
+  }
+]
